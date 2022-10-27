@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Local Resolution Tools</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="XmippButton">
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+               <normaloff>:/icons/logo.png</normaloff>:/icons/logo.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>70</width>
+               <height>70</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="pathLineEdit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pathButton">
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+               <normaloff>:/icons/path.png</normaloff>:/icons/path.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="helpButton">
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+               <normaloff>:/icons/helpblue.png</normaloff>:/icons/helpblue.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="citeButton">
+             <property name="maximumSize">
+              <size>
+               <width>40</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+               <normaloff>:/icons/cite.png</normaloff>:/icons/cite.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>25</width>
+               <height>25</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="MonoRes">
+       <attribute name="title">
+        <string>MonoRes</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_29">
+            <item>
+             <widget class="QLabel" name="usaHalfMapsLabel_MR">
+              <property name="text">
+               <string>Use Half Maps</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="halfMapsYes_MR">
+              <property name="text">
+               <string>Yes</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="halfMapsNo_MR">
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_30">
+            <item>
+             <widget class="QLabel" name="halfMap1Label_MR">
+              <property name="text">
+               <string>Half Map 1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="halfMap1Line_MR"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="halfMap1Browse_MR">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_40">
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="halfMap2Label_MR">
+              <property name="text">
+               <string>Half Map 2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="halfMap2Line_MR"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="halfMap2Browse_MR">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="maskLabel_MR">
+              <property name="text">
+               <string>Mask           </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="maskLine_MR"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="maskBrowse_MR">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_41">
+            <item>
+             <widget class="QLabel" name="resolutionRangeLabel_MR">
+              <property name="text">
+               <string>Resolution Range to Analyze</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="fromLabel_MR">
+              <property name="text">
+               <string>from </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="highResLine_MR">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="toLabel_MR">
+              <property name="text">
+               <string>A to</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lowResLine_MR">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="stepLabel_MR">
+              <property name="text">
+               <string>A in steps of </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="stepLine_MR">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="samplingLabel_MR">
+              <property name="text">
+               <string>A                         Sampling Rate (A/px)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="samplingLine_MR">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_42">
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_43">
+            <item>
+             <widget class="QCheckBox" name="advancedCheckBox_MR">
+              <property name="text">
+               <string>Advanced options</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_14">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_44">
+            <item>
+             <widget class="QLabel" name="significanceLabel_MR">
+              <property name="text">
+               <string>Significance</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="significanceLine_MR">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0.95</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="GausianLabel_MR">
+              <property name="text">
+               <string>Consider Guassian Noise?</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="GausianYes_MR">
+              <property name="text">
+               <string>Yes</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="GaussianNo_MR">
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_19">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_45"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_46">
+            <item>
+             <spacer name="horizontalSpacer_20">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="analyzeButton_MR">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Analyze Button</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ExecuteLabel_MR">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Execute</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MonoDir">
+       <attribute name="title">
+        <string>MonoDir</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_32">
+            <item>
+             <widget class="QLabel" name="mapLabel_MD">
+              <property name="text">
+               <string>Map  </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="mapLine_MD"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="mapBrowse_MD">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_33">
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="maskLabel_MD">
+              <property name="text">
+               <string>Mask</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="maskLine_MD"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="maskBrowse_MD">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_35">
+            <item>
+             <widget class="QLabel" name="samplingLabel_MD">
+              <property name="text">
+               <string>Sampling Rate (A/px)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="samplingLine_MD">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_36">
+            <item>
+             <widget class="QCheckBox" name="advancedCheckBox_MD">
+              <property name="text">
+               <string>Advanced options</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_16">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_37">
+            <item>
+             <widget class="QLabel" name="significanceLabel_MD">
+              <property name="text">
+               <string>Significance</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="significanceLine_MD">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0.95</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="premaskedLabel_MD">
+              <property name="text">
+               <string>Is originally premasked?</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="premaskedYes_MD">
+              <property name="text">
+               <string>Yes</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="premaskedNo_MD">
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_17">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_38">
+            <item>
+             <widget class="QLabel" name="fastLabel_MD">
+              <property name="text">
+               <string>Fast Computation? </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="fastYes_MD">
+              <property name="text">
+               <string>Yes</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="fastNo_MD">
+              <property name="text">
+               <string>No</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_39">
+            <item>
+             <spacer name="horizontalSpacer_18">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="analyzeButton_MD">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Analyze Results</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ExecuteLabel_MD">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Execute</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="MonoTomo">
+       <attribute name="title">
+        <string>MonoTomo</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <widget class="QLabel" name="oddLabel_MT">
+              <property name="text">
+               <string>Odd Tomogram </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="oddLine_MT"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="oddBrowse_MT">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_22">
+            <property name="bottomMargin">
+             <number>20</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="evenLabel_MT">
+              <property name="text">
+               <string>Even Tomogram</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="evenLine_MT"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="evenBrowse_MT">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc">
+                <normaloff>:/icons/open.png</normaloff>:/icons/open.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QLabel" name="resolutionRangeLabel_MT">
+              <property name="text">
+               <string>Resolution Range to Analyze</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="fromLabel_MT">
+              <property name="text">
+               <string>from </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="highResLine_MT">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="toLabel_MT">
+              <property name="text">
+               <string>A to</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lowResLine_MT">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="stepLabel_MT">
+              <property name="text">
+               <string>A in steps of </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="stepLine_MT">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="samplingLabel_MT">
+              <property name="text">
+               <string>A        Sampling Rate (A/px)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="samplingLine_MT">
+              <property name="maximumSize">
+               <size>
+                <width>60</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_24"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <item>
+             <widget class="QCheckBox" name="advancedCheckBox_MT">
+              <property name="text">
+               <string>Advanced options</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_10">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <widget class="QLabel" name="significanceLabel_MT">
+              <property name="text">
+               <string>Significance</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="significanceLine_MT">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>0.95</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_27"/>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_28">
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="analyzeButton_MT">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Analyze Results</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ExecuteLabel_MT">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(233, 185, 110);</string>
+              </property>
+              <property name="text">
+               <string>Execute</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>895</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../opt/scipionStable/xmipp-bundle/src/resolutionTools/icons/iconsResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

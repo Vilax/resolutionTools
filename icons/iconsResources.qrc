@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>see.png</file>
+    <file>path.png</file>
+    <file>open.png</file>
+    <file>helpblue.png</file>
+    <file>help.png</file>
+    <file>cite.png</file>
+    <file>logo.png</file>
+  </qresource>
+</RCC>
