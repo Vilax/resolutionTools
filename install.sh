@@ -43,6 +43,7 @@ echo "XMIPP_PATH = ${PWD}${XMIPP_PATH}" >> $INITFILE
 
 EXECUTABLEFILE="localResolutiontools"
 echo "cd $(pwd)" >> $EXECUTABLEFILE
+echo "$source ./xmipp/build/xmipp.bashrc" >> $EXECUTABLEFILE
 echo "$(pwd)/main.py" >> $EXECUTABLEFILE
 chmod +x ${EXECUTABLEFILE}
 
